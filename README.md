@@ -1,4 +1,4 @@
-# OrdaCash MFO Portal
+# Orda FinanceMFO Portal
 
 Kazakhstan-style MFO landing portal for auto-secured loans, microloans, and entrepreneur support.
 
