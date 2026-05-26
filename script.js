@@ -247,9 +247,41 @@ const translations = {
   }
 };
 
-function applyLanguage(lang) {
-  const dictionary = translations[lang] || translations.kk;
-  document.documentElement.lang = lang;
+const DEFAULT_LANGUAGE = "kk";
+const LANGUAGE_CACHE_KEY = "ordacash-language";
+
+function isSupportedLanguage(lang) {
+  return Object.prototype.hasOwnProperty.call(translations, lang);
+}
+
+function getCachedLanguage() {
+  try {
+    const cachedLanguage = localStorage.getItem(LANGUAGE_CACHE_KEY);
+    return isSupportedLanguage(cachedLanguage) ? cachedLanguage : null;
+  } catch (error) {
+    return null;
+  }
+}
+
+function cacheLanguage(lang) {
+  try {
+    localStorage.setItem(LANGUAGE_CACHE_KEY, lang);
+  } catch (error) {
+    // Language switching should still work when localStorage is unavailable.
+  }
+}
+
+function resolveInitialLanguage() {
+  const htmlLanguage = document.documentElement.lang;
+
+  return getCachedLanguage()
+    || (isSupportedLanguage(htmlLanguage) ? htmlLanguage : DEFAULT_LANGUAGE);
+}
+
+function applyLanguage(lang, shouldCache = true) {
+  const activeLanguage = isSupportedLanguage(lang) ? lang : DEFAULT_LANGUAGE;
+  const dictionary = translations[activeLanguage];
+  document.documentElement.lang = activeLanguage;
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = dictionary[node.dataset.i18n];
@@ -259,12 +291,16 @@ function applyLanguage(lang) {
   });
 
   document.querySelectorAll("[data-lang]").forEach((button) => {
-    button.classList.toggle("active", button.dataset.lang === lang);
+    button.classList.toggle("active", button.dataset.lang === activeLanguage);
   });
+
+  if (shouldCache) {
+    cacheLanguage(activeLanguage);
+  }
 }
 
 document.querySelectorAll("[data-lang]").forEach((button) => {
   button.addEventListener("click", () => applyLanguage(button.dataset.lang));
 });
 
-applyLanguage("kk");
+applyLanguage(resolveInitialLanguage(), false);
