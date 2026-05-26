@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kazakhstan MFO portal for auto-secured loans and microloans with multilingual content and responsive design."
+    />
+    <title>Altyn Finance MFO | Kazakhstan Loan Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Altyn Finance home">
+        <span class="brand-mark">AF</span>
+        <span>
+          <strong>Altyn Finance</strong>
+          <small data-i18n="brandSub">MFO Kazakhstan</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#products" data-i18n="navProducts">Products</a>
+        <a href="#calculator" data-i18n="navCalc">Calculator</a>
+        <a href="#process" data-i18n="navProcess">Process</a>
+        <a href="#reviews" data-i18n="navReviews">Reviews</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="active" type="button" data-lang="kk">KAZ</button>
+          <button type="button" data-lang="ru">RUS</button>
+          <button type="button" data-lang="en">ENG</button>
+        </div>
+        <a class="button compact" href="#apply" data-i18n="applyNow">Apply now</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Licensed MFO-style lending portal</p>
+          <h1 data-i18n="heroTitle">Fast auto-secured loans and microloans for Kazakhstan</h1>
+          <p class="hero-text" data-i18n="heroText">
+            Get a transparent decision, keep driving your vehicle, and receive funds to a Kaspi or bank account.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#calculator" data-i18n="calculateLoan">Calculate loan</a>
+            <a class="button ghost" href="#products" data-i18n="viewProducts">View products</a>
+          </div>
+          <dl class="trust-strip">
+            <div>
+              <dt>15 min</dt>
+              <dd data-i18n="statDecision">preliminary decision</dd>
+            </div>
+            <div>
+              <dt>24/7</dt>
+              <dd data-i18n="statOnline">online application</dd>
+            </div>
+            <div>
+              <dt>0 KZT</dt>
+              <dd data-i18n="statHidden">hidden fees</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-label="Auto loan visual">
+          <img src="assets/hero-car-finance.png" alt="Premium vehicle finance visual in blue and gold" />
+          <div class="rate-card">
+            <span data-i18n="rateLabel">From</span>
+            <strong>2.4%</strong>
+            <small data-i18n="ratePeriod">monthly rate</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <div>
+          <strong>7</strong>
+          <span data-i18n="metricCities">cities covered</span>
+        </div>
+        <div>
+          <strong>180K+</strong>
+          <span data-i18n="metricClients">client applications</span>
+        </div>
+        <div>
+          <strong>30M KZT</strong>
+          <span data-i18n="metricMax">maximum auto-secured amount</span>
+        </div>
+        <div>
+          <strong>36 mo</strong>
+          <span data-i18n="metricTerm">maximum term</span>
+        </div>
+      </section>
+
+      <section id="products" class="section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="productsEyebrow">Core services</p>
+          <h2 data-i18n="productsTitle">Loan products built for local financial habits</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card featured">
+            <div class="icon-badge">AUTO</div>
+            <h3 data-i18n="autoTitle">Auto-secured loan</h3>
+            <p data-i18n="autoText">Use your vehicle as collateral while continuing to drive it every day.</p>
+            <ul>
+              <li data-i18n="autoPoint1">Up to 30,000,000 KZT</li>
+              <li data-i18n="autoPoint2">Term up to 36 months</li>
+              <li data-i18n="autoPoint3">Vehicle valuation in one visit</li>
+            </ul>
+          </article>
+          <article class="product-card">
+            <div class="icon-badge">KZT</div>
+            <h3 data-i18n="microTitle">Microloan</h3>
+            <p data-i18n="microText">Short-term financing for family, travel, repair, medical, or business needs.</p>
+            <ul>
+              <li data-i18n="microPoint1">50,000 - 1,500,000 KZT</li>
+              <li data-i18n="microPoint2">Online decision</li>
+              <li data-i18n="microPoint3">Flexible repayment date</li>
+            </ul>
+          </article>
+          <article class="product-card">
+            <div class="icon-badge">SME</div>
+            <h3 data-i18n="smeTitle">Entrepreneur support</h3>
+            <p data-i18n="smeText">Working-capital loans for small trade, logistics, repair shops, and services.</p>
+            <ul>
+              <li data-i18n="smePoint1">Revenue-based review</li>
+              <li data-i18n="smePoint2">Repeat-client limits</li>
+              <li data-i18n="smePoint3">Early repayment available</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="calculator" class="calculator-section section-band">
+        <div class="calculator-copy">
+          <p class="eyebrow" data-i18n="calcEyebrow">Loan calculator</p>
+          <h2 data-i18n="calcTitle">Estimate payment before applying</h2>
+          <p data-i18n="calcText">
+            Static examples show typical repayment figures for auto-secured and microloan products.
+          </p>
+        </div>
+
+        <div class="calculator">
+          <div class="static-row">
+            <span data-i18n="autoTitle">Auto-secured loan</span>
+            <strong data-i18n="calcExampleAuto">3 500 000 KZT / 18 months</strong>
+          </div>
+          <div class="static-row">
+            <span data-i18n="microTitle">Microloan</span>
+            <strong data-i18n="calcExampleMicro">500 000 KZT / 12 months</strong>
+          </div>
+          <div class="result-grid">
+            <div>
+              <span data-i18n="monthlyPayment">Monthly payment</span>
+              <strong>243 600 KZT</strong>
+            </div>
+            <div>
+              <span data-i18n="totalPayment">Total repayment</span>
+              <strong>4 384 800 KZT</strong>
+            </div>
+            <div>
+              <span data-i18n="overPayment">Estimated overpayment</span>
+              <strong>884 800 KZT</strong>
+            </div>
+          </div>
+          <p class="fineprint" data-i18n="calcFineprint">
+            Calculation is indicative and not a public offer. Final terms depend on verification and credit review.
+          </p>
+        </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="processEyebrow">Application flow</p>
+          <h2 data-i18n="processTitle">A familiar, low-friction route from request to payout</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="step1Title">Submit request</h3>
+            <p data-i18n="step1Text">Choose product, enter contacts, IIN, city, and target amount.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="step2Title">Verification</h3>
+            <p data-i18n="step2Text">Manager confirms details, vehicle data if needed, and repayment capacity.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="step3Title">Sign agreement</h3>
+            <p data-i18n="step3Text">Review schedule, sign digitally or in branch, and select payout method.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3 data-i18n="step4Title">Receive funds</h3>
+            <p data-i18n="step4Text">Funds are transferred to card, bank account, or partner cash desk.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="apply" class="apply-section section-band">
+        <div>
+          <p class="eyebrow" data-i18n="applyEyebrow">Online request</p>
+          <h2 data-i18n="applyTitle">Start with a short application</h2>
+          <p data-i18n="applyText">The static contact block can be connected to CRM, SMS verification, or banking APIs later.</p>
+        </div>
+        <div class="application-form static-application">
+          <div>
+            <span data-i18n="phoneLabel">Phone</span>
+            <strong>+7 700 000 00 00</strong>
+          </div>
+          <div>
+            <span data-i18n="coverageLabel">Coverage</span>
+            <strong>Almaty, Astana, Shymkent</strong>
+          </div>
+          <div>
+            <span data-i18n="documentsLabel">Documents</span>
+            <strong data-i18n="documentsValue">ID, IIN, vehicle documents</strong>
+          </div>
+          <div>
+            <span data-i18n="languagesLabel">Languages</span>
+            <strong>Kazakh / Russian / English</strong>
+          </div>
+          <a class="button primary wide" href="tel:+77000000000" data-i18n="sendRequest">Send request</a>
+        </div>
+      </section>
+
+      <section id="reviews" class="section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="reviewsEyebrow">Client stories</p>
+          <h2 data-i18n="reviewsTitle">Calm, practical finance for real situations</h2>
+        </div>
+        <div class="reviews">
+          <article>
+            <p data-i18n="review1">"The car valuation was clear, and I received the money the same day without leaving the vehicle at the branch."</p>
+            <strong>Aidar, Almaty</strong>
+          </article>
+          <article>
+            <p data-i18n="review2">"I used a microloan for shop inventory. The repayment calendar was easy to understand."</p>
+            <strong>Madina, Shymkent</strong>
+          </article>
+          <article>
+            <p data-i18n="review3">"The manager explained all charges before signing. No surprises after payout."</p>
+            <strong>Sergey, Astana</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section-band">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="faqEyebrow">Questions</p>
+          <h2 data-i18n="faqTitle">Important lending details</h2>
+        </div>
+        <div class="faq-list">
+          <article>
+            <h3 data-i18n="faq1Q">Can I keep using my car?</h3>
+            <p data-i18n="faq1A">Yes. For the standard auto-secured product, the borrower keeps using the vehicle unless a different structure is agreed.</p>
+          </article>
+          <article>
+            <h3 data-i18n="faq2Q">Which documents are needed?</h3>
+            <p data-i18n="faq2A">Usually identity document, IIN, phone number, and vehicle documents for auto-secured loans.</p>
+          </article>
+          <article>
+            <h3 data-i18n="faq3Q">Is early repayment possible?</h3>
+            <p data-i18n="faq3A">Yes. The interface is prepared for early repayment rules and schedule recalculation.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Altyn Finance MFO</strong>
+        <p data-i18n="footerText">Digital lending portal concept for Kazakhstan MFO operations.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#apply" data-i18n="applyNow">Apply now</a>
+        <a href="#calculator" data-i18n="navCalc">Calculator</a>
+        <a href="tel:+77000000000">+7 700 000 00 00</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
