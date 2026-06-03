@@ -306,6 +306,7 @@ document.querySelectorAll("[data-lang]").forEach((button) => {
 document.querySelectorAll('[data-i18n="applyNow"]').forEach((link) => {
   link.addEventListener("click", () => {
     if (typeof window.gtag === "function") {
+      console.log(123)
       window.gtag("event", "click_register");
     }
   });
