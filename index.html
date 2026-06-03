@@ -15,6 +15,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H0PN2LHKE9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-H0PN2LHKE9");
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -40,21 +55,35 @@
           <button type="button" data-lang="ru">RUS</button>
           <button type="button" data-lang="en">ENG</button>
         </div>
-        <a class="button compact" href="#apply" data-i18n="applyNow">Apply now</a>
+        <a class="button compact" href="#apply" data-i18n="applyNow"
+          >Apply now</a
+        >
       </div>
     </header>
 
     <main id="top">
       <section class="hero section-band">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">Licensed MFO-style lending portal</p>
-          <h1 data-i18n="heroTitle">Fast auto-secured loans and microloans for Kazakhstan</h1>
+          <p class="eyebrow" data-i18n="heroEyebrow">
+            Licensed MFO-style lending portal
+          </p>
+          <h1 data-i18n="heroTitle">
+            Fast auto-secured loans and microloans for Kazakhstan
+          </h1>
           <p class="hero-text" data-i18n="heroText">
-            Get a transparent decision, keep driving your vehicle, and receive funds to a Kaspi or bank account.
+            Get a transparent decision, keep driving your vehicle, and receive
+            funds to a Kaspi or bank account.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#calculator" data-i18n="calculateLoan">Calculate loan</a>
-            <a class="button ghost" href="#products" data-i18n="viewProducts">View products</a>
+            <a
+              class="button primary"
+              href="#calculator"
+              data-i18n="calculateLoan"
+              >Calculate loan</a
+            >
+            <a class="button ghost" href="#products" data-i18n="viewProducts"
+              >View products</a
+            >
           </div>
           <dl class="trust-strip">
             <div>
@@ -73,7 +102,10 @@
         </div>
 
         <div class="hero-visual" aria-label="Auto loan visual">
-          <img src="assets/hero-car-finance.png" alt="Premium vehicle finance visual in blue and gold" />
+          <img
+            src="assets/hero-car-finance.png"
+            alt="Premium vehicle finance visual in blue and gold"
+          />
           <div class="rate-card">
             <span data-i18n="rateLabel">From</span>
             <strong>2.4%</strong>
@@ -104,13 +136,18 @@
       <section id="products" class="section">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="productsEyebrow">Core services</p>
-          <h2 data-i18n="productsTitle">Loan products built for local financial habits</h2>
+          <h2 data-i18n="productsTitle">
+            Loan products built for local financial habits
+          </h2>
         </div>
         <div class="product-grid">
           <article class="product-card featured">
             <div class="icon-badge">AUTO</div>
             <h3 data-i18n="autoTitle">Auto-secured loan</h3>
-            <p data-i18n="autoText">Use your vehicle as collateral while continuing to drive it every day.</p>
+            <p data-i18n="autoText">
+              Use your vehicle as collateral while continuing to drive it every
+              day.
+            </p>
             <ul>
               <li data-i18n="autoPoint1">Up to 30,000,000 KZT</li>
               <li data-i18n="autoPoint2">Term up to 36 months</li>
@@ -120,7 +157,10 @@
           <article class="product-card">
             <div class="icon-badge">KZT</div>
             <h3 data-i18n="microTitle">Microloan</h3>
-            <p data-i18n="microText">Short-term financing for family, travel, repair, medical, or business needs.</p>
+            <p data-i18n="microText">
+              Short-term financing for family, travel, repair, medical, or
+              business needs.
+            </p>
             <ul>
               <li data-i18n="microPoint1">50,000 - 1,500,000 KZT</li>
               <li data-i18n="microPoint2">Online decision</li>
@@ -130,7 +170,10 @@
           <article class="product-card">
             <div class="icon-badge">SME</div>
             <h3 data-i18n="smeTitle">Entrepreneur support</h3>
-            <p data-i18n="smeText">Working-capital loans for small trade, logistics, repair shops, and services.</p>
+            <p data-i18n="smeText">
+              Working-capital loans for small trade, logistics, repair shops,
+              and services.
+            </p>
             <ul>
               <li data-i18n="smePoint1">Revenue-based review</li>
               <li data-i18n="smePoint2">Repeat-client limits</li>
@@ -145,18 +188,23 @@
           <p class="eyebrow" data-i18n="calcEyebrow">Loan calculator</p>
           <h2 data-i18n="calcTitle">Estimate payment before applying</h2>
           <p data-i18n="calcText">
-            Static examples show typical repayment figures for auto-secured and microloan products.
+            Static examples show typical repayment figures for auto-secured and
+            microloan products.
           </p>
         </div>
 
         <div class="calculator">
           <div class="static-row">
             <span data-i18n="autoTitle">Auto-secured loan</span>
-            <strong data-i18n="calcExampleAuto">3 500 000 KZT / 18 months</strong>
+            <strong data-i18n="calcExampleAuto"
+              >3 500 000 KZT / 18 months</strong
+            >
           </div>
           <div class="static-row">
             <span data-i18n="microTitle">Microloan</span>
-            <strong data-i18n="calcExampleMicro">500 000 KZT / 12 months</strong>
+            <strong data-i18n="calcExampleMicro"
+              >500 000 KZT / 12 months</strong
+            >
           </div>
           <div class="result-grid">
             <div>
@@ -173,7 +221,8 @@
             </div>
           </div>
           <p class="fineprint" data-i18n="calcFineprint">
-            Calculation is indicative and not a public offer. Final terms depend on verification and credit review.
+            Calculation is indicative and not a public offer. Final terms depend
+            on verification and credit review.
           </p>
         </div>
       </section>
@@ -181,28 +230,40 @@
       <section id="process" class="section">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="processEyebrow">Application flow</p>
-          <h2 data-i18n="processTitle">A familiar, low-friction route from request to payout</h2>
+          <h2 data-i18n="processTitle">
+            A familiar, low-friction route from request to payout
+          </h2>
         </div>
         <div class="steps">
           <article>
             <span>01</span>
             <h3 data-i18n="step1Title">Submit request</h3>
-            <p data-i18n="step1Text">Choose product, enter contacts, IIN, city, and target amount.</p>
+            <p data-i18n="step1Text">
+              Choose product, enter contacts, IIN, city, and target amount.
+            </p>
           </article>
           <article>
             <span>02</span>
             <h3 data-i18n="step2Title">Verification</h3>
-            <p data-i18n="step2Text">Manager confirms details, vehicle data if needed, and repayment capacity.</p>
+            <p data-i18n="step2Text">
+              Manager confirms details, vehicle data if needed, and repayment
+              capacity.
+            </p>
           </article>
           <article>
             <span>03</span>
             <h3 data-i18n="step3Title">Sign agreement</h3>
-            <p data-i18n="step3Text">Review schedule, sign digitally or in branch, and select payout method.</p>
+            <p data-i18n="step3Text">
+              Review schedule, sign digitally or in branch, and select payout
+              method.
+            </p>
           </article>
           <article>
             <span>04</span>
             <h3 data-i18n="step4Title">Receive funds</h3>
-            <p data-i18n="step4Text">Funds are transferred to card, bank account, or partner cash desk.</p>
+            <p data-i18n="step4Text">
+              Funds are transferred to card, bank account, or partner cash desk.
+            </p>
           </article>
         </div>
       </section>
@@ -211,7 +272,10 @@
         <div>
           <p class="eyebrow" data-i18n="applyEyebrow">Online request</p>
           <h2 data-i18n="applyTitle">Start with a short application</h2>
-          <p data-i18n="applyText">The static contact block can be connected to CRM, SMS verification, or banking APIs later.</p>
+          <p data-i18n="applyText">
+            The static contact block can be connected to CRM, SMS verification,
+            or banking APIs later.
+          </p>
         </div>
         <div class="application-form static-application">
           <div>
@@ -224,32 +288,50 @@
           </div>
           <div>
             <span data-i18n="documentsLabel">Documents</span>
-            <strong data-i18n="documentsValue">ID, IIN, vehicle documents</strong>
+            <strong data-i18n="documentsValue"
+              >ID, IIN, vehicle documents</strong
+            >
           </div>
           <div>
             <span data-i18n="languagesLabel">Languages</span>
             <strong>Kazakh / Russian / English</strong>
           </div>
-          <a class="button primary wide" href="tel:+77000000000" data-i18n="sendRequest">Send request</a>
+          <a
+            class="button primary wide"
+            href="tel:+77000000000"
+            data-i18n="sendRequest"
+            >Send request</a
+          >
         </div>
       </section>
 
       <section id="reviews" class="section">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="reviewsEyebrow">Client stories</p>
-          <h2 data-i18n="reviewsTitle">Calm, practical finance for real situations</h2>
+          <h2 data-i18n="reviewsTitle">
+            Calm, practical finance for real situations
+          </h2>
         </div>
         <div class="reviews">
           <article>
-            <p data-i18n="review1">"The car valuation was clear, and I received the money the same day without leaving the vehicle at the branch."</p>
+            <p data-i18n="review1">
+              "The car valuation was clear, and I received the money the same
+              day without leaving the vehicle at the branch."
+            </p>
             <strong>Aidar, Almaty</strong>
           </article>
           <article>
-            <p data-i18n="review2">"I used a microloan for shop inventory. The repayment calendar was easy to understand."</p>
+            <p data-i18n="review2">
+              "I used a microloan for shop inventory. The repayment calendar was
+              easy to understand."
+            </p>
             <strong>Madina, Shymkent</strong>
           </article>
           <article>
-            <p data-i18n="review3">"The manager explained all charges before signing. No surprises after payout."</p>
+            <p data-i18n="review3">
+              "The manager explained all charges before signing. No surprises
+              after payout."
+            </p>
             <strong>Sergey, Astana</strong>
           </article>
         </div>
@@ -263,15 +345,24 @@
         <div class="faq-list">
           <article>
             <h3 data-i18n="faq1Q">Can I keep using my car?</h3>
-            <p data-i18n="faq1A">Yes. For the standard auto-secured product, the borrower keeps using the vehicle unless a different structure is agreed.</p>
+            <p data-i18n="faq1A">
+              Yes. For the standard auto-secured product, the borrower keeps
+              using the vehicle unless a different structure is agreed.
+            </p>
           </article>
           <article>
             <h3 data-i18n="faq2Q">Which documents are needed?</h3>
-            <p data-i18n="faq2A">Usually identity document, IIN, phone number, and vehicle documents for auto-secured loans.</p>
+            <p data-i18n="faq2A">
+              Usually identity document, IIN, phone number, and vehicle
+              documents for auto-secured loans.
+            </p>
           </article>
           <article>
             <h3 data-i18n="faq3Q">Is early repayment possible?</h3>
-            <p data-i18n="faq3A">Yes. The interface is prepared for early repayment rules and schedule recalculation.</p>
+            <p data-i18n="faq3A">
+              Yes. The interface is prepared for early repayment rules and
+              schedule recalculation.
+            </p>
           </article>
         </div>
       </section>
@@ -280,7 +371,9 @@
     <footer class="site-footer">
       <div>
         <strong>Orda Finance MFO</strong>
-        <p data-i18n="footerText">Digital lending portal concept for Kazakhstan MFO operations.</p>
+        <p data-i18n="footerText">
+          Digital lending portal concept for Kazakhstan MFO operations.
+        </p>
       </div>
       <div class="footer-links">
         <a href="#apply" data-i18n="applyNow">Apply now</a>

@@ -303,4 +303,12 @@ document.querySelectorAll("[data-lang]").forEach((button) => {
   button.addEventListener("click", () => applyLanguage(button.dataset.lang));
 });
 
+document.querySelectorAll('[data-i18n="applyNow"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "click_register");
+    }
+  });
+});
+
 applyLanguage(resolveInitialLanguage(), false);
