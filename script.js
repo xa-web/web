@@ -1,6 +1,6 @@
 const translations = {
   kk: {
-    brandSub: "MFO Kazakhstan",
+    brandSub: 'MFO Kazakhstan',
     navProducts: "Өнімдер",
     navCalc: "Калькулятор",
     navProcess: "Процесс",
